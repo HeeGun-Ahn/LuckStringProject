@@ -1,3 +1,0 @@
-Jang
-Jeon
-Ahn
