@@ -1,9 +1,9 @@
 Project - LuckString
 ====================
 
-### 팀원
-* 안희건
-* 전용석
-* 장준혁
+### Team
+* Ahn HuiGeon
+* Jeon YongSeok
+* Jang JunHyeok
 
-### 목표?
+
