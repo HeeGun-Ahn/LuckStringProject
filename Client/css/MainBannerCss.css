@@ -1,7 +1,37 @@
+
+/* 레이아웃 지정 */
 body{
     max-width: 1080px;    
     margin: 0 auto;
 }
+header{
+    background-color: yellow;
+}
+nav{
+    background-color: aqua;
+}
+wrap{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: green;
+}
+section{
+    width: 756px; 
+    background-color: bisque;
+}
+section wrap_int{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    max-width: 324px;
+    background-color: cadetblue;
+}
+footer{
+    background-color: tomato;
+}
+/* 레이아웃 지정 */
 
 header .main_banner{
     font-size: 32px;
@@ -13,7 +43,6 @@ nav{
     display: flex;
 }
 nav ul {
-    display: inline;
 
 }
 nav ul li{
@@ -26,6 +55,6 @@ section .wrap_int{
     justify-content: space-between;
 }
 div > a > img{
-    width: 300px;
+    width: 400px;
     height: 250px;
 }
