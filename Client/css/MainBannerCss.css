@@ -25,36 +25,65 @@ section wrap_int{
     flex-wrap: wrap;
 }
 aside{
-    max-width: 324px;
+    width: 324px;
     background-color: cadetblue;
 }
 footer{
+    height: 150px;
     background-color: tomato;
 }
 /* 레이아웃 지정 */
 
+/* header */
 header .main_banner{
     font-size: 32px;
     font-weight: bolder;
     text-align: center;
     margin: 10px;
 }
+/* header */
+
+/* nav */
 nav{
     display: flex;
+    flex-wrap: wrap;
 }
 nav ul {
-
+    margin: auto;
 }
 nav ul li{
     float: left;
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0 5px;
+    background: white;
 }
+nav ul div{
+    float: left;
+}
+/* nav .search_bar[type=search]{
+    margin: auto 10px;
+    color: red;  
+	text-align: right;
+	cursor: pointer;
+    display: block; 
+    height: 40px;
+	width: 100%; 
+	letter-spacing: 4px;        
+	text-shadow: 0 0 2px black;       
+	word-spacing: 20px; } */
+/* nav */
+
+/* section */
 section .wrap_int{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
+
 div > a > img{
     width: 400px;
     height: 250px;
 }
+/* section */
