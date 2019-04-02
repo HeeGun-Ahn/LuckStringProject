@@ -1,109 +1,162 @@
-
-/* 레이아웃 지정 */
-header{
-    background-color: darkgreen;
-    height: 125px;
-}
-nav{
-    background-color: yellowgreen;
-}
-wrap{
-    display: flex;
-    flex-wrap: wrap;
-
-    background-color: green;
-}
-section{
-    width: 756px; 
-    background-color: bisque;
-}
-section wrap_int{
-    display: flex;
-    flex-wrap: wrap;
-}
-aside{
-    width: 324px;
-    background-color: cadetblue;
-}
-footer{
-    height: 150px;
-    background-color: tomato;
-}
-/* 레이아웃 지정 */
-
-/* header */
-header .main_banner{
-    font-size: 32px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 10px;
-}
-/* header */
-
-/* nav */
-nav{
-    display: flex;
-    flex-wrap: wrap;
-}
-nav ul {
-    margin: auto;
-}
-nav ul li{
-    float: left;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0 5px;
-    background: white;
-}
-nav ul div{
-    float: left;
-}
-/* nav .search_bar[type=search]{
-    margin: auto 10px;
-    color: red;  
-	text-align: right;
-	cursor: pointer;
-    display: block; 
-    height: 40px;
-	width: 100%; 
-	letter-spacing: 4px;        
-	text-shadow: 0 0 2px black;       
-	word-spacing: 20px; } */
-/* nav */
-
-/* section */
-section .wrap_int{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-}
-
-div > a > img{
-    width: 400px;
-    height: 250px;
-}
-/* section */
-
+/* 미디어 쿼리 흐름? 진행? mobile -> desktop */
 /* 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용 */
-@media (min-width: 576px) {
+body{
+    display: flex;
+    flex-flow: column;
+    height: 50vh;
+    background-color: red;
+}
+
+header{
+    background-color: green;
+    height: 15vh;
+    font-size: 2em;
+    text-align: center;
+    line-height: 15vh;
+    font-weight: 600;
+    color: white;
+}
+
+nav {
+    height: 30vh;
+    line-height: 5vh;
+    background-color: yellow;
+    display: flex;
+    flex-flow: row;
     
 }
+#list_wrap{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: white;
+}
+nav > ul > li{
+    display: inline-block;
+}
+.navMenu_link{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+#search_wrap{
+    align-self: center;
+    margin-left: auto;
+    display: none;
+}
+.nav_text{
+    display: none;
+    align-self: center;
+    font-weight: 600;
+}
+
+section {
+    background-color: purple;
+}
+section > div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+section > div > div{
+    width: 60%;
+}
+div > div > a > img {
+    width: 100%;
+}
+
+aside{
+    height: 15vh;
+}
+
+footer{
+    height: 15vh;
+}
+
+
 
 /* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
-@media (min-width: 769px) and (max-width: 991px) {
-
+@media (min-width: 769px) and (max-width: 951px) {
+    body{
+    }
+    header{
+    }
+    nav{
+        flex-flow: row;
+    }
+    section {
+    }
+    section > div > div {
+        display: flex;
+        flex-flow: row;
+        margin: 1%;
+    }
+    section > div > div > div {
+        margin: 1%;
+    }
+    div > div > a > img {
+        flex-basis: 150px;
+    }
+    aside{
+    }
+    footer{
+    }
 }
 
 /* 테스크탑 (가로 해상도가 992px 보다 큰 화면에 적용) */
 @media (min-width: 992px) and (max-width: 1199px) {
+    body{
+    }
+    header{
+    }
+    nav{
+    }
+    #search_wrap{
+        display: unset;
+    }
 
+    section > div {
+    }
+    section > div > div {
+    }
+    aside{
+    }
+    footer{
+    }
 }
 
 /* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용) */
 @media (min-width: 1200px) {
     body{
-        max-width: 1080px;    
+        max-width: 1080px;
         margin: 0 auto;
+    }
+
+    header{
+    }
+    
+    nav{
+    }
+    .nav_text{
+        display: contents;
+    }
+    #search_wrap{
+        display: unset;
+    }
+    
+    section > div {
+    }
+    section > div > div {
+    }
+    
+    aside{
+    }
+    
+    footer{
     }
 }
